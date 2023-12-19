@@ -105,6 +105,8 @@ img {
   text-decoration: none;
   color: #2e2f42;
   padding: 24px 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -141,6 +143,10 @@ img {
   color: #434455;
   display: flex;
   gap: 40px;
+}
+
+.contacts-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
@@ -188,6 +194,8 @@ img {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-button:hover,
@@ -349,6 +357,8 @@ img {
 
   border-radius: 50%;
   background-color: #4d5ae5;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -399,6 +409,8 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -409,6 +421,7 @@ img {
 
 .portfolio-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -427,6 +440,13 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background: #4d5ae5;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-border {
@@ -481,5 +501,4 @@ img {
 .footer-socials-item {
   display: flex;
   gap: 16px;
-  align-items: baseline;
 }
